@@ -1,0 +1,15 @@
+img{
+  width: 100px;
+}
+
+.div-sp{
+  border: solid 3px #98C379;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.div-ten{
+  color: #E06C75;
+  font-weight: bold;
+}

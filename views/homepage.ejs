@@ -3,8 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    Hello KhoaPham!
+    <%
+      mang.forEach(function(chim, index){
+        %>
+          <div class="div-sp">
+            <img src="images/<%=chim.hinh%>"/>
+            <div class="div-ten">
+              <%=chim.ten%>
+            </div>
+            <div class="div-gia">
+              <%=chim.gia%> VND
+            </div>
+            <a href="/sua/<%=index%>"><button>Sửa</button></a>
+          </div>
+        <%
+      });
+    %>
+    <a href="/add"><button> Thêm </button></a>
   </body>
 </html>
